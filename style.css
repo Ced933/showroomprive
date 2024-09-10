@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    background-color: #ccc;
+  }
+
+  img {
+    border: 0;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  td {
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+  }
+  tr {
+    border-spacing: 0;
+    border: 0;
+  }
+
+  table {
+    border: 0;
+    border-spacing: 0;
+  }
+  .wrapper {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #ccc;
+    padding-bottom: 60px;
+  }
+
+  .main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #fff;
+    font-family: sans-serif;
+    border-spacing: 0;
+    color: #171a1b;
+  }
+  /* image  */
+  .td-img {
+    position: relative;
+  }
+
+  /* description  */
+
+  .div-describe {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    /* border: 1px solid red; */
+    text-align: center;
+    /* width: 100%; */
+  }
+
+  /* date  */
+  .describe-h2 {
+    color: #fff;
+    font-size: 15px;
+  }
+
+  /* titre  semaine des fleurs */
+  .describe-h3 {
+    color: #fff;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    @media screen and (max-width: 500px) {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  .describe-span-fleur {
+    font-size: 60px;
+    @media screen and (max-width: 500px) {
+      font-size: 30px;
+    }
+  }
+
+  /* description de l'offre  */
+
+  .describe-offer {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    /* border: 1px solid black; */
+    width: 90%;
+    @media screen and (max-width: 500px) {
+      bottom: 5%;
+    }
+  }
+
+  .describe-offer h3 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+  }
+
+  .describe-offer p {
+    /* font-size: 30px; */
+    color: #fff;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+      font-size: 13px;
+    }
+  }
+
+  /* section discount  */
+
+  .td-discount {
+    background-color: #bd8760;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+  .td-discount h3 {
+    padding-bottom: 20px;
+    @media screen and (max-width: 500px) {
+      font-size: 15px;
+      width: 70%;
+      margin: 0 auto;
+      /* margin-top:30px ; */
+    }
+  }
+  .anime-line {
+    /* border: 1px solid white; */
+    /* padding: 5px; */
+    width: 70%;
+    padding: 5px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  /* @property --rotate{
+syntax: "<angle>";
+initial-value: 0deg;
+inherits: false;
+} */
+  .div-discount {
+    border: 1px dashed white;
+    width: 100%;
+    /* padding: 10px; */
+    /* margin: 0 auto; */
+    /* z-index: 3; */
+    background-color: #bd8760;
+    @media screen and (max-width: 500px) {
+      padding-bottom: 10px;
+    }
+  }
+  .div-discount::before {
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    /* background: #fff; */
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 1px;
+    border-radius: 20px;
+    background-image: conic-gradient(#bd8760, #fff);
+    animation: animate 2s linear infinite;
+  }
+
+  /* .div-discount p {
+padding-bottom: 15px;
+} */
+  .flex-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  .btn-code {
+    background-color: #171a1b;
+    padding: 10px 20px;
+    border-radius: 50px;
+    @media screen and (max-width: 500px) {
+    }
+  }
+
+  /* animation  */
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
